@@ -1,6 +1,20 @@
 from .base import *
 
+INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+
+
 DEBUG = False
+
+ALLOWED_HOSTS = ["18.216.125.136"]
+
 
 DATABASES = {
     'default': {
