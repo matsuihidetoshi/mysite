@@ -10,6 +10,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+
 DEBUG = False
 
 ALLOWED_HOSTS = ["18.216.125.136"]
