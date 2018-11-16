@@ -12,6 +12,8 @@ INSTALLED_APPS = [
 
 DEBUG = False
 
+ALLOWED_HOSTS = ["18.216.125.136"]
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
