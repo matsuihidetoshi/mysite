@@ -114,5 +114,5 @@ STATIC_ROOT = '/var/www/django/mysite/static/'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    '/var/www/django/mysite/static/',
+     [os.path.join(PROJECT_ROOT, 'static')],
 )
