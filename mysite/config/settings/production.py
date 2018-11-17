@@ -24,6 +24,12 @@ DATABASES = {
 }
 
 
+ROOT_PATH = os.path.dirname(__file__)
+STATICFILES_DIRS = ( [os.path.join(ROOT_PATH, 'static')] )
+
+STATIC_URL = '/static/'
+STATIC_ROOT = '/var/www/django/mysite/static/'
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
