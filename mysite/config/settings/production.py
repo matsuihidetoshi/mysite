@@ -25,3 +25,38 @@ DATABASES = {
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/hidetoshi/Python-3.6.6/mysite/static/'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'production': {
+            'format': '%(asctime)s [%(levelname)s] %(process)d %(thread)d '
+                      '%(pathname)s:%(lineno)d %(message)s'
+        },
+    },
+    'handlers': {
+        'file': {
+            'class': 'logging.handlers.TimedRotatingFileHandler',
+            'filename': 'logs/django.log',
+            'formatter': 'production',
+            'when': 'D', # 単位は日
+            'interval': 1, # 一日おき
+            'backupCount': 7, # 世代数
+        },
+    },
+    'loggers': {
+        # 自作したログ出力
+        '': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        # Djangoの警告・エラー
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+    },
+}
