@@ -1,5 +1,15 @@
 from .base import *
 
+INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+
 DEBUG = True
 
 DATABASES = {
@@ -9,4 +19,5 @@ DATABASES = {
     }
 }
 
-STATIC_URL = ''
+STATIC_URL = '/static/'
+STATIC_ROOT = '/home/hidetoshi/Python-3.6.6/mysite/static/'
