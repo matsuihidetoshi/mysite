@@ -13,7 +13,7 @@ INSTALLED_APPS = [
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["18.216.125.136"]
+ALLOWED_HOSTS = ["*.mattle.work", "18.216.125.136"]
 
 DATABASES = {
     'default': {
