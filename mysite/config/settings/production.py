@@ -1,7 +1,7 @@
 from .base import *
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),  # プロジェクト直下のstaticディレクトリを指定
+    os.path.join(ANOTHER_BASE_DIR, 'static'),  # プロジェクト直下のstaticディレクトリを指定
 )
 
 INSTALLED_APPS = [
