@@ -26,6 +26,7 @@ DATABASES = {
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/hidetoshi/Python-3.6.6/mysite/static/'
 
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
