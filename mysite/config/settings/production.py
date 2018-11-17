@@ -1,5 +1,9 @@
 from .base import *
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),  # プロジェクト直下のstaticディレクトリを指定
+)
+
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
     'django.contrib.admin',

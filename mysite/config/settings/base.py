@@ -110,8 +110,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/hidetoshi/Python-3.6.6/mysite/static/'
-
-ROOT_PATH = os.path.dirname(__file__)
-STATICFILES_DIRS = (
-    [os.path.join(ROOT_PATH, 'static')]
-)
