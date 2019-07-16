@@ -18,8 +18,12 @@ ALLOWED_HOSTS = [".mattle.work", "18.216.125.136"]
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'polls_db',
+        'USER': 'root',
+        'PASSWORD': 'hidetoshi0424',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
