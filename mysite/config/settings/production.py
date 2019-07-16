@@ -13,7 +13,7 @@ INSTALLED_APPS = [
 
 DEBUG = False
 
-ALLOWED_HOSTS = [".mattle.work", "18.216.125.136"]
+ALLOWED_HOSTS = [".mattle.work", "52.193.251.60"]
 
 
 DATABASES = {
@@ -30,7 +30,7 @@ DATABASES = {
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-STATIC_ROOT = os.path.join('/var/www/django/mysite/static/')
+STATIC_ROOT = os.path.join('/var/www/django/mysite/mysite/static/')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
